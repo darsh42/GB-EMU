@@ -11,7 +11,7 @@ debug:
 	$(CC) src/*.c -o bin/gameboy -g -lSDL2 -lncurses -Wall -Wextra -fsanitize=address
 
 release:
-	$(CC) $(FILES) -o bin/gameboy -lSDL2
+	$(CC) $(FILES) -o gameboy -lSDL2
 
 
 # end
