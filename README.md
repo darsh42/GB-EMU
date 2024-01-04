@@ -31,7 +31,6 @@ NOTE:
 
 #### ISSUES:
 - Implement Sound
-- Implement Save files
 - Sprites not properly loading for big games (see Pokemon Red)
   - Probably a MBC issue (Un-implemented)
     - Implement MBC3
@@ -47,6 +46,7 @@ NOTE:
 - Check and Verify memory management routines and ROM/RAM bank switching
 - Create proper start up sequence, set all correct register values and memory locations
 - Create Cartridge header and load ROM correctly
+- Implement Save files
 - Fix Memory
   - Possible issue with RAM banking
 - Fix CPU
