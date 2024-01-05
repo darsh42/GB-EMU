@@ -31,9 +31,6 @@ NOTE:
 
 #### ISSUES:
 - Implement Sound
-- Sprites not properly loading for big games (see Pokemon Red)
-  - Probably a MBC issue (Un-implemented)
-    - Implement MBC3
 - SCX scrolling is too fast (see Link's Awakening)
 
 #### IMPROVEMENTS:
@@ -57,6 +54,9 @@ NOTE:
   - Sprites seem to have been drawn too much to the right (SML hitboxes)
   - Sprites dont draw middle pixels when horizontally flipped
   - SCX is choppy
+  - Sprites not properly loading for big games (see Pokemon Red)
+    - Probably a MBC issue (Un-implemented)
+      - Implement MBC3
 
 #### FIXED IMPROVEMENTS:
 - ROM and RAM banking as separate arrays for easier indexing
