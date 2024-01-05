@@ -317,7 +317,6 @@ void mem_write(uint16_t addr, uint8_t data) {
                         mem.ROM_bank_number |= data << 8;
                     }
 
-                    printf("%x\n", mem.ROM_bank_number);
                     break;
             }
         }
@@ -375,7 +374,6 @@ void mem_write(uint16_t addr, uint8_t data) {
             case(3):
                 if (mem.RTC_enabled) {
                     // Do stuff
-                    return;
                 }
                 break;
             case(5): break;
