@@ -3,6 +3,7 @@
 This is a simple Gameboy Emulator written in C using SDL on Linux
 
 Compiling:
+Requires libsdl2 
 ```makefile
 make release
 ```
