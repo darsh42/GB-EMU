@@ -1,7 +1,10 @@
 #ifndef GBC_H_INCLUDED
 #define GBC_H_INCLUDED
 
+#define CIMGUI_DEFINE_ENUMS_AND_STRUCTS
+
 #include "common.h"
+#include "../cimgui/cimgui.h"
 
 // Load ROM
 extern int mem_save(char *filename);
