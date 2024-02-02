@@ -46,6 +46,9 @@ struct Channel_4 {
 
         uint8_t byte;
     } NR44;
+
+    // stores the current length timer
+    int length_timer;
 };
 
 

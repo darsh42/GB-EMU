@@ -4,7 +4,7 @@
 #include "common.h"
 
 struct Channel_2 {
-    /* Channel 2 Length time and duty cycle - 0XFF11 -> NR21 */
+    /* Channel 2 Length time and duty cycle - 0XFF16 -> NR21 */
     union {
         struct {
             uint8_t wave_duty: 2;
@@ -14,7 +14,7 @@ struct Channel_2 {
         uint8_t byte;
     } NR21;
 
-    /* Channel 2 volume & envelope - 0XFF12 -> NR22 */
+    /* Channel 2 volume & envelope - 0XFF17 -> NR22 */
     union {
         struct {
             uint8_t initial_volume: 4;
@@ -25,7 +25,7 @@ struct Channel_2 {
         uint8_t byte;
     } NR22;
 
-    /* Channel 2 period low [write-only] - 0XFF13 -> NR23*/
+    /* Channel 2 period low [write-only] - 0XFF18 -> NR23*/
     union {
         struct {
             uint8_t period_value_lower;
@@ -34,7 +34,7 @@ struct Channel_2 {
         uint8_t byte;
     } NR23;
 
-    /* Channel 2 period high & control - FF14 -> NR24 */
+    /* Channel 2 period high & control - FF19 -> NR24 */
     union {
         struct {
             uint8_t trigger: 1;
@@ -45,6 +45,9 @@ struct Channel_2 {
 
         uint8_t byte;
     } NR24;
+
+    // stores the current length timer
+    int length_timer;
 };
 
 #endif // CH2_H_INCLUDED

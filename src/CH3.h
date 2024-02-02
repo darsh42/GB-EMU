@@ -54,6 +54,9 @@ struct Channel_3 {
 
         uint8_t byte;
     } NR34;
+
+    // stores the current length timer
+    int length_timer;
 };
 
 #endif // CH3_H_INCLUDED

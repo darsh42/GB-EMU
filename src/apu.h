@@ -9,16 +9,7 @@
 #include "CH4.h"
 
 struct apu {
-    /* APU registers
-     * CH1 - Pulse channel
-     * CH2 - Pulse channel
-     * CH3 -  Wave channel
-     * CH4 - Noise channel */
-    struct Channel_1 CH1;
-    struct Channel_2 CH2;
-    struct Channel_3 CH3;
-    struct Channel_4 CH4;
-
+    /* APU registers */
     uint8_t left;
     uint8_t right;
 
@@ -63,6 +54,21 @@ struct apu {
 
         uint8_t byte;
     } NR50;
+
+    /* CH1 - Pulse channel
+     * CH2 - Pulse channel
+     * CH3 -  Wave channel
+     * CH4 - Noise channel */
+    struct Channel_1 CH1;
+    struct Channel_2 CH2;
+    struct Channel_3 CH3;
+    struct Channel_4 CH4;
+
+    struct {
+        int right;
+        int left;
+    } stereo;
+
 };
 
 extern uint8_t *mem_pointer(uint16_t addr);

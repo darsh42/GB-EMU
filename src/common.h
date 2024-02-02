@@ -60,4 +60,27 @@
 #define mIF              0XFF0F
 #define mIE              0XFFFF
 
+// audio locations
+#define mNR10            0XFF10
+#define mNR11            0XFF11
+#define mNR12            0XFF12
+#define mNR13            0XFF13
+#define mNR14            0XFF14
+#define mNR21            0XFF16
+#define mNR22            0XFF17
+#define mNR23            0XFF18
+#define mNR24            0XFF19
+#define mNR30            0XFF1A
+#define mNR31            0XFF1B
+#define mNR32            0XFF1C
+#define mNR33            0XFF1D
+#define mNR34            0XFF1E
+#define mNR41            0XFF20
+#define mNR42            0XFF21
+#define mNR43            0XFF22
+#define mNR44            0XFF23
+#define mNR50            0XFF24
+#define mNR51            0XFF25
+#define mNR52            0XFF26
+
 #endif // COMMON_H_INCLUDED
